@@ -28,9 +28,10 @@ export default function LayoutPrincipal() {
       <header className="barre-navigation">
         <Link to="/" className="marque-logo">
           <img
-  src={`${import.meta.env.BASE_URL}Logo-teranga-blog.png`}
-  alt="Logo Teranga Blog"
-/>
+            src="/logo-teranga-blog.png"
+            alt="Logo Teranga Blog"
+            className="logo-img"
+          />
           <span>Teranga Blog</span>
         </Link>
 
