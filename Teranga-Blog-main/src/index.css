@@ -1,0 +1,130 @@
+/* Feuille de style de départ : le projet évalue React, pas le CSS.
+   Tu peux l'utiliser telle quelle, la modifier, ou demander à une IA de réécrire tout le CSS
+   et de placer les classes (className) dans ton JSX : c'est la seule aide complète autorisée. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f7f8fa;
+  color: #1e293b;
+}
+
+.barre-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.marque-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.logo-img {
+  height: 36px;
+  width: auto;
+}
+
+.liens-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.nav-lien {
+  text-decoration: none;
+  color: #475569;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+}
+
+.nav-lien--actif {
+  background-color: #0f766e;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.contenu-principal {
+  max-width: 1050px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.grille-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.carte-article,
+.carte-auteur,
+.formulaire-commentaire,
+.commentaire-item {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.barre-recherche {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.barre-recherche input,
+.formulaire-commentaire input,
+.formulaire-commentaire textarea {
+  width: 100%;
+  max-width: 420px;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: #0f766e;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
+}
+
+button:hover {
+  background-color: #115e59;
+}
+
+.liste-auteurs,
+.liste-commentaires {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.etat-erreur,
+.message-erreur {
+  color: #b91c1c;
+  background-color: #fef2f2;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+}
